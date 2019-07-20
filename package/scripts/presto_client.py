@@ -105,7 +105,7 @@ def ensure_nodes_are_up(client, all_hosts):
                 nodes_returned_from_presto, all_hosts))
 
 # This class was copied more or less verbatim from
-# https://github.com/prestodb/presto-admin/blob/master/prestoadmin/prestoclient.py
+# https://github.com/prestosql/presto-admin/blob/master/prestoadmin/prestoclient.py
 class PrestoClient:
     response_from_server = {}
     # rows returned by the query

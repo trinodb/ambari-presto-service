@@ -101,16 +101,4 @@
     </description>
   </property>
 
-<!-- TODO, figure out how to make this optional
-  <property require-input="false">
-    <name>query.queue-config-file</name>
-    <value></value>
-    <description>
-        Specifies the file to read the queue configuration from. See
-        https://prestodb.io/docs/current/admin/queue.html for more info in the
-        file and the expected options.
-    </description>
-  </property>
--->
-
 </configuration>

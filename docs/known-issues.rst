@@ -46,9 +46,6 @@ Known Issues
 
 * At the moment, upgrading Presto from Ambari is not possible. Even though
   Ambari provides the capability to upgrade software, we didn't get a chance
-  to implement the integration. If many users request this feature
-  (if you'd like to see this feature let us know by commenting on
-  `this issue <https://github.com/prestodb/ambari-presto-service/issues/17>`_),
-  we'll add it to the next release. To upgrade Presto without the native
+  to implement the integration. If many users request this feature. To upgrade Presto without the native
   upgrade integration you have to manually uninstall Presto and then install
   the new version.

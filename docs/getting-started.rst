@@ -10,8 +10,8 @@ Requirements for integration
 1. Red Hat Enterprise Linux 6.x (64-bit) or CentOS equivalent.
 2. You must have Ambari installed and thus transitively fulfill
    `Ambari's requirements <http://docs.hortonworks.com/HDPDocuments/Ambari-2.1.2.1/bk_Installing_HDP_AMB/content/_meet_minimum_system_requirements.html>`_.
-3. Oracle's JDK 1.8u60+ for Presto version 0.148 and over, and
-   1.8u40+ for Presto versions before 0.148. We recommend you read the section on
+3. Oracle's JDK 1.8u151+ for Presto version 0.196 and over, and
+   1.8u151+ for Presto versions before 0.196. We recommend you read the section on
    :ref:`jdk-configuration-label` to fully understand
    the relationship between Presto and Ambari's JDK.
 4. Disable ``requiretty``. On RHEL 6.x this can be done by editing the
@@ -24,10 +24,7 @@ Adding the Presto service
 This section and all others that follow within :ref:`Getting Started <getting_started>`
 walk you through the integration steps needed to get Presto working with
 Ambari. By default, this integration code installs Presto version ``0.196``,
-the latest version at the time of writing. To install the latest Teradata
-Presto release (``0.148t`` at the time of writing), download the Ambari
-integration package from `here <http://www.teradata.com/presto>`_ and follow
-the remaining instructions below. To change the distribution to install
+the latest version at the time of writing. To change the distribution to install
 another version, see :ref:`Build and custom distributions <build_and_custom_distributions>`.
 
 To integrate the Presto service with Ambari, follow the steps outlined below:
@@ -41,9 +38,8 @@ To integrate the Presto service with Ambari, follow the steps outlined below:
     $ cd /var/lib/ambari-server/resources/stacks/HDP/2.6/services/PRESTO
 
 * Place the integration files within the newly created PRESTO directory.
-  Download the integration package that installs Teradata's version from
-  `here <http://www.teradata.com/presto>`_ or download the integration package
-  that installs ``0.148`` from the `releases section of this project <https://github.com/prestodb/ambari-presto-service/releases>`_. Upload the integration archive to your cluster and extract it like so:
+  Download the integration package
+  that installs ``0.196`` from the `releases section of this project <https://github.com/prestosql/ambari-presto-service/releases>`_. Upload the integration archive to your cluster and extract it like so:
 
   .. code-block:: bash
 

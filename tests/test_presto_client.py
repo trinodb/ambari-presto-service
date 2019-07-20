@@ -65,7 +65,7 @@ class TestPrestoClientSmoketest(TestCase):
         TestCase.assertRaises(self, RuntimeError, smoketest_presto, self.presto_client_mock, ['master'])
 
 # These tests were copied more or less verbatim from
-# https://github.com/prestodb/presto-admin/blob/master/tests/unit/test_prestoclient.py
+# https://github.com/prestosql/presto-admin/blob/master/tests/unit/test_prestoclient.py
 class TestPrestoClient(TestCase):
 
     def test_no_sql(self):
